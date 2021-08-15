@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+
+body {
+    transition: 0.3s;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(241, 239, 239);
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(57, 57, 57);
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 50px 0 10px 0;
+}
+
+p {
+    margin: 0px;
+    font-size: 20px;
+}
+
+a {
+    color: rgb(73, 54, 141);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+
+.headshot {
+    width: 300px;
+}
+
+.dark a {
+    color: rgb(111, 111, 194);
+}
+
+.square h2 {
+    margin: 50px 0 10px 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+
+.switch {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(39, 38, 38);
+    border-radius: 20px;
+    position: relative;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow: 
+        inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px 5px rgb(195 193 198 / 90%);
+}
+
+
+.dark {
+    background-color: rgb(57, 57, 57);
+    transition: 0.3s ;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+    
+}
+
+.dark > * {
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-text {
+    padding: 30px;
+}
+
+.square {
+    width: 98%;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 1%;
+}
+
+.dark .square {
+    background-color: rgb(71, 71, 71);
+}
+
+#eventspace {
+    background-image: url(images/eventspace.png);
+    background-size: cover;
+}
+
+#workout {
+    background-image: url(images/myworkouts.png);
+    background-size: cover;
+}
+
+#parks {
+    background-image: url(images/parks&parkas.png);
+    background-size: cover;
+}
+
+#planner {
+    background-image: url(images/planner.png);
+    background-size: cover;
+}
+
+
+
+.sub-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 30px;
+    background-color: rgb(136, 136, 136);
+    margin-top: 50;
+    height: 80px;
+    
+}
+
+.dark footer {
+    background-color: rgb(28, 28, 28);
+}
+
+@media only screen and (min-width: 970px) {
+    .main-text {
+        width: 50%;
+    }
+    
+    .square {
+        width: 48%;
+        margin: 1%;
+        height: 600px;
+    }
+}
