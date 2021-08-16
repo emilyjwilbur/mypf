@@ -8,6 +8,7 @@
 
         <!-- BOX ICONS -->
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        
 
 
         <title>Emily Wilbur</title>
@@ -67,11 +68,13 @@
                 <div>
                     <h2 class="about__subtitle">I'm Emily Wilbur</h2>
                     <span class="about__profession">Full-Stack Web Developer</span>
-                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea incidunt sequi nobis. Sequi labore exercitationem laboriosam cum aspernatur autem esse veniam excepturi, nam commodi dicta eum rerum dolore obcaecati iure.</p>
+                    <p class="about__text">I'm a Full Stack Web Developer passionate about developing web applications that are easy to use and appealing to the public.
+
+                        I believe quality design is rooted in both simplicity and elegance; therefore, I build and contribute to applications that are simple, yet effective, and put user interface first. I earned a certificate in Full Stack Web Development from the Georgia Institute of Technology to add technical expertise alongside my Bachelor of Science in Journalism & Mass Communication from Kent State University.  </p>
 
                     <div class="about__social">
-                        <a href="#" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                        <a href="#" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                        <a href="https://www.linkedin.com/in/emilyjwilbur/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/emilyjwilbur" class="about__social-icon"><i class='bx bxl-github' ></i></a>
                         
                     </div>
                 </div>
@@ -93,6 +96,7 @@
                     <span class="skills__name">JavaScript</span>
                     <span class="skills__name">Node.JS</span>
                     <span class="skills__name">React</span>
+                    <span class="skills__name">MongoDB</span>
 
                     <h3 class="skills__subtitle">Design</h3>
                     <span class="skills__name">Figma</span>
@@ -112,36 +116,57 @@
             <h2 class="section-title">Portfolio</h2>
             <div class="portfolio__container bd-grid">
                 <div class="portfolio__img">
-                    <img src="images/eventspace.png" alt="">
-
+                    <img src="images/event.png" alt="">
+                    
                     <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View Project</a>
+                        
+                        <a href="https://eventspace-a2198.web.app/" class="portfolio__link-name">An event planning CRUD app built with React, enhanced by adding Redux and added Firestore to provide the persistance layer for the application.<br><br>View Live Project</a>
                     </div>
                 </div>
 
                 <div class="portfolio__img">
-                    <img src="images/myworkouts.png" alt="">
+                    <img src="images/nood.png" alt="">
 
                     <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View Project</a>
+                        <a href="https://noodsatl.com/" class="portfolio__link-name">View Live Project</a>
+                        
                     </div>
                 </div>
+                
 
                 <div class="portfolio__img">
                     <img src="images/parks&parkas.png" alt="">
 
                     <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View Project</a>
+                        <a href="https://ls-t.github.io/Parks-N-Parkas/" class="portfolio__link-name">An Interactive app allowing users to search for a national park and is then provided with a correlating weekly weather forecast and park info. Uses Open Weather and National Park API, Bootstrap, jQuery frameworks and local storage.<br><br>View Live Project</a>
                     </div>
                 </div>
 
                 <div class="portfolio__img">
-                    <img src="images/planner.png" alt="">
+                    <img src="images/Screen Shot 2021-08-16 at 4.39.10 PM.png" alt="">
 
                     <div class="portfolio__link">
-                        <a href="#" class="portfolio__link-name">View Project</a>
+                        <a href="https://emilyjwilbur.github.io/random-quote-generator/" class="portfolio__link-name">A data fetching React Advice App. Using React on the front end and creating get requests to Advice Slip JSON API, generating good advice with just one click.<br><br>View Live Project</a>
                     </div>
                 </div>
+
+                <div class="portfolio__img">
+                    <img src="images/Screen Shot 2021-08-16 at 5.05.33 PM.png" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://sheltered-crag-20933.herokuapp.com/" class="portfolio__link-name">This is a Node application that utilizes Express, Mongoose and is deployed to Heroku and utilizes a MongoDB Atlas database. Create workouts, and track weekly minutes exercised and weight lifted via MongoDB aggregators.<br><br>View Live Project</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__img">
+                    <img src="images/employee.png" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="https://radiant-mountain-52951.herokuapp.com/" class="portfolio__link-name">This is a React app, that leverages the Random User database to generate a list of random employees. This was an activity to get more familiar with setting state, mapping arrays, and doing on-page sorting.<br><br>View Live Project</a>
+                    </div>
+                </div>
+
+                
 
             </div>
         </section>
@@ -159,13 +184,13 @@
                     <span class="contact__text">770.286.1039</span>
                 </div>
 
-                <form action="" class="contact__form">
+                <form action="https://formsubmit.co/ewilbur94@gmail.com" method="POST" class="contact__form">
                     <div class="contact__inputs">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
+                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
                     </div>
 
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <textarea name="message" placeholder="message" cols="0" rows="10" class="contact__input" required></textarea>
 
                     <input type="submit" value="Submit" class="contact__button">
                 </form>
@@ -179,11 +204,7 @@
 
         <footer class="footer section">
             <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">Emily Wilbur</h2>
-                    <p class="footer__text">I'm Emily Wilbur and this is my personal website.</p>
-                </div>
-
+                
                 <div class="footer__data">
                     <h2 class="footer__title">EXPLORE</h2>
                     <ul>
@@ -197,13 +218,18 @@
 
                 <div class="footer__data">
                     <h2 class="footer__title">FOLLOW</h2>
-                    <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.facebook.com/emmy.wilbur.56" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.instagram.com/emmywilbur/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://twitter.com/emmywilbur" class="footer__social"><i class='bx bxl-twitter' ></i></a>
                     
                 </div>
 
             </div>
+            <br>
+            <br>
+            <span style="color: white; font-size: 15px;",>Made with 🤍 in ATL</span>
+            <br>
+            <span style="color:white; font-size: 13;">Copyright &copy; Emily J. Wilbur. All rights reserved.</span>
         </footer>
 
         <!-- SCROLL REVEAL -->

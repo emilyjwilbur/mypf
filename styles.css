@@ -1,4 +1,5 @@
 /* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 
 /* VARIABLES CSS */
@@ -10,7 +11,7 @@
 
 /* COLORS */
 :root {
-    --first-color: #5361FF;
+    --first-color: #295186;
     --white-color: #FAFAFF;
     --dark-color: #2A3B47;
     --text-color: #697477;
@@ -21,7 +22,7 @@
 /* TYPOGRAPHY */
 
 :root {
-    --body-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto Condensed', sans-serif;
     --big-font-size: 6.25rem;
     --h2-font-size: 1.25rem;
     --normal-font-size: .938rem;
@@ -259,6 +260,8 @@ img {
 
 .about__text {
     margin-bottom: var(--mb-4);
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .about__profession {
@@ -323,6 +326,8 @@ img {
     border-radius: .5rem;
 }
 
+
+
 .portfolio__link {
     position: absolute;
     bottom: -100%;
@@ -338,13 +343,18 @@ img {
     transition: .3s;
 }
 
+
 .portfolio__img:hover .portfolio__link {
     bottom: 0;
+    
 }
 
 .portfolio__link-name {
     color: var(--dark-color);
+    
 }
+
+
 
 /* CONTACT */
 
@@ -475,26 +485,27 @@ img {
     }
 
     .about__container {
-        grid-template-columns: repeat(2, 1fr);
         align-items:center;
-        text-align:initial;
-        padding: 4rem 0;
+        padding: 2rem 0;
+        justify-items: center;
+        text-align: center;
+        
+}
         
     }
 
     .about__img {
-        width: 300px;
-        height: 200px;
-    }
-
-    .about__img img {
-        width: 165px;
-    }
-
-    .skills__container {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
+        display: flex;
         justify-content: center;
+        height: 200;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .skills_container {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
     }
 
     .portfolio__container {
@@ -508,15 +519,16 @@ img {
         justify-items: center;
     }
     .contact__form {
-        width: 380px;
+        width: 275px;
+        justify-content: center;
     }
 
     .footer__container {
         grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
+        
     }
 
-}
+
 
 @media screen and (min-width: 1024px) {
     .bd-grid {
